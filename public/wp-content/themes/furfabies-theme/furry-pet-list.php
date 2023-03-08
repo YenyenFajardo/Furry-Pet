@@ -77,6 +77,7 @@ get_header();?>
                         <img class="img" src="<?=get_theme_file_uri( '/images/wence.JPG' );?>"></img>
                         <h3>I AM RESCUED<i class="fa-solid fa-paw"></i><p>You didn't care how I looked </br>or that I wasn't a pedigree</br>You showed me I am not disposable</br>and that i am loved</br>You brought back the sparkle in my eye</br>and the shine of my coat</br>You restored my spirit</br>so my tail can wag again</br>You took a chance on me</br>to see what I can become</br>You gave me a place to call home</br>and a family to call MY OWN<i class="fa-solid fa-heart"></i></p></h3>
                     </div>
+                    <!-- <button class="blog-btn" onclick="openModal('faq-modal')" style="float: right;">View FAQ</button> -->
                     <div class="count-pet">
                         <h3>Give them a forever home <i class="fa fa-home" aria-hidden="true"></i></h3> <i class="fa-solid fa-paw"></i> <?php echo $post_count; ?> FURRY <?php echo $pets_text; ?> WAITING FOR YOU
                     </div>
@@ -166,8 +167,8 @@ get_header();?>
                         <input type="text" class="form-input" name="pet_weight" id="pet_weight" cols="30" rows="10"  placeholder="Pet Weight" required></input>   
                     </div>
                     <div class="form-group">
-                        <label for="">Rescued From</label>
-                        <textarea class="form-input" name="pet_rescued" id="pet_rescued" cols="30" rows="10"  placeholder="Rescued From" required></textarea>   
+                        <label for="">Rescue Story</label>
+                        <textarea class="form-input" name="pet_rescue" id="pet_rescue" cols="30" rows="10"  placeholder="Rescue Story" required></textarea>   
                     </div>
                     <div class="form-group">
                         <label for="subject">Make it Featured?</label>
@@ -188,6 +189,25 @@ get_header();?>
                 </form>
             </div>
         </div>
+        <!-- FAQ Modal -->
+        <!-- <div id="faq-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('faq-modal')">&times;</span>
+                <h2>Frequently Asked Questions</h2>
+                <h3>Why is there an adoption fee?</h3>
+                <p>By paying the adoption fee, you show your dedication to providing proper care for your new pet and</br> demonstrate your financial ability to do so. For a nominal fee of P500 for cats and dogs,</br> you can cover essential medical expenses such as spay/neuter surgery, vaccinations, and tick/flea treatment.</p>
+                <hr>
+                <h3>Can my adoption application get denied?</h3>
+                <p>
+                    Certainly. Applications may be rejected for various reasons such as inability to provide indoor </br>housing for the pet, unsuitability for the household, and other situations that could pose a </br>threat to the wellbeing, security, and contentment of our shelter animals.
+                </p>
+                <hr>
+                <h3>Can I adopt more than one pet?</h3>
+                <p>
+                    On a case-by-case basis, certain applicants may be authorized to adopt more than a single pet,</br> particularly if the animal they seek to adopt is part of a bonded pair.
+                </p>
+            </div>
+        </div> -->
     <?php
 get_footer();
 ?>

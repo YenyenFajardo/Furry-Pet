@@ -226,7 +226,7 @@ function editPetPost(id){
                 $('#pet_age').val(res.data.pet_age);
                 $('#pet_gender').val(res.data.pet_gender);
                 $('#pet_weight').val(res.data.pet_weight);
-                $('#pet_rescued').val(res.data.pet_rescued);
+                $('#pet_rescue').val(res.data.pet_rescue);
                 $('#featured_post').val(res.data.featured_post);
                 $('#featured-img-view').css('background-image', `url(${res.data.featured_image})`);
 
@@ -245,7 +245,7 @@ function editPetPost(id){
     });
 }
 function save(e){
-    if($('#pet_name').val() && $('#pet_description').val() && $('#pet_age').val() && $('#pet_gender').val() && $('#pet_weight').val() && $('#pet_rescued').val())
+    if($('#pet_name').val() && $('#pet_description').val() && $('#pet_age').val() && $('#pet_gender').val() && $('#pet_weight').val() && $('#pet_rescue').val())
     {
         $(e).html('<i class="fa fa-spin fa-spinner"></i> Posting...');
         $(e).attr('disabled','disabled');
@@ -268,7 +268,7 @@ function save(e){
                         type: "success",
                     },
                     () => {
-                        window.location.href='/furry-pet/'
+                        window.location.href='/pets/'
                     });
                 }else{
                     console.log(res.data);
@@ -282,42 +282,4 @@ function save(e){
         });
     }
 }
-// function submit(e) {
-//     if($('#pet_name').val() && $('#pet_description').val() && $('#pet_age').val() && $('#pet_gender').val() && $('#pet_weight').val() && $('#pet_rescued').val()){
-//         $(e).html('<i class="fa fa-spin fa-spinner"></i> Posting...');
-//         $(e).attr('disabled','disabled');
 
-//         var formData = new FormData(document.getElementById('post-form'));
-//         $.ajax({
-//             type: 'POST',
-//             url: $('#ajaxUrl').val(), 
-//             data: formData,
-//             contentType: false,
-//             processData: false,
-//             success:(response)=>{
-//                 var res = JSON.parse(response.slice(0, -1)); // We need this code to return
-//                 if(res.status==true){
-//                     // Success Message
-//                 swal({
-//                             title: "Post Saved!",
-//                             text: res.msg,
-//                             type: "success",
-//                         },
-//                         () => {
-//                             window.location.href='/my-blog/'
-//                         });
-
-//                 }else{
-//                     // Error message
-//                     swal("Oops", "Post failed to save.", "error");
-//                 }
-//             },
-//             error: (e)=>{
-//                 swal("Oops", "Post failed to save.", "error");
-//             }
-//         });
-//     }else{
-//         // Error message
-//         swal("Oops", "Please fill in the required fields.", "error");
-//     }
-// }

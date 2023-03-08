@@ -9,7 +9,7 @@
         $age = get_field('age', $post_id);
         $gender = get_field('gender', $post_id);
         $weight = get_field('weight', $post_id);
-        $recuedFrom = get_field('rescued_from', $post_id);
+        $recuedFrom = get_field('rescue_story', $post_id);
         ?>
         
         <div class="page-banner-pet">
@@ -44,7 +44,7 @@
                         <td><?= $weight;?></td>
                     </tr>
                     <tr>
-                        <th>Rescued From</th>
+                        <th>Rescue Story</th>
                         <td><?= $recuedFrom;?></td>
                     </tr>
                 </table>

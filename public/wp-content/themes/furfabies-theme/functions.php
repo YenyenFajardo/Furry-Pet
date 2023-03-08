@@ -222,7 +222,7 @@ function get_pet_post() {
             'pet_age' => $post->age,
             'pet_gender' => $post->gender,
             'pet_weight' => $post->weight,
-            'pet_rescued' => $post->rescued_from,
+            'pet_rescue' => $post->rescue_story,
             'featured_post'    => (get_field('featured_post', $post->ID) == 'Yes') ? 'Yes' : 'No',
             'featured_image'   => (get_field('featured_image', $post->ID)) ? get_field('featured_image', $post->ID) : get_theme_file_uri( '/images/no_pic.jpg' ),
         ),
@@ -242,7 +242,7 @@ function create_petPost() {
             'age' => $_POST['pet_age'],
             'gender' => $_POST['pet_gender'],
             'weight' => $_POST['pet_weight'],
-            'rescued_from' => $_POST['pet_rescued'],
+            'rescue_story' => $_POST['pet_rescue'],
         )
     );
     if($_POST['post_id']){
