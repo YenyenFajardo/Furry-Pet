@@ -752,9 +752,8 @@ body.login {
   margin-right: 0;
 }
 .site-footer {
-  padding: 2rem 0 3.5rem 0;
+  padding: 0 0 3rem 0;
   background-image: linear-gradient(#fff, #ececec);
-  bottom: 0;
 }
 .site-footer p {
   font-size: 0.9rem;
@@ -888,8 +887,9 @@ body.login {
   font-family: Raleway;
   font-weight: 300;
   font-size: 3.6rem;
-  margin: 0 0 1rem 0;
+  margin: 0;
   color: #fff;
+  text-align-last: center;
 }
 @media (min-width: 530px) {
   .page-banner__title {
@@ -1820,8 +1820,9 @@ body.admin-bar .search-overlay {
 }
 .card th, td{
   border-top: 1px solid #ddd;
-  padding: 25px 100px;
+  padding: 25px 25px;
   background-color: #e7e6e6;
+  font-size: 12px;
 }
 .quote {
   display: flex;
@@ -1858,22 +1859,16 @@ body.admin-bar .search-overlay {
   margin: 0;
   font-size: 15px;
 }
+.pet-single {
+  background-size: cover;
+}
 .pet-single .home h3 {
-  color: #000000;
+  color: #f3f3f3;
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
-  padding: 0 50px;
-  margin: 3rem 0 10px 0;
-  text-shadow: 2px 2px 3px #eb4545;
-}
-.pet-single .bg-single {
-  position: absolute;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.49;
+  padding: 15px 50px;
+  margin: 0;
+  text-shadow: 3px 3px 2px #b50303;
 }
 .custom-search-wrapper {
   float: right;
@@ -1924,3 +1919,22 @@ input#search-input {
   color: #fff;
   padding: 15px 20px;
 }
+/* @media only screen and (max-width: 1024px){
+  .pet-details .pet-image {
+    width: 368px !important;
+    height: 248px !important; 
+  }
+  /* .card {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-evenly;
+    /* border: 1px solid#7a2500; */
+    /* margin: 0 0 0 20px;
+    z-index: 99;
+  } */ 
+/* }  */
+ @media only screen and (max-width: 320px){
+    .pet-details .pet-image{
+      width: 86%;
+    }
+ }

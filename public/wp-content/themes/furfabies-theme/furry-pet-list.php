@@ -57,7 +57,7 @@ get_header();?>
             $args = array(
                 'post_type'      => array('furry-pet'),
                 'post_status'    => 'publish',
-                'posts_per_page' => 1,
+                'posts_per_page' => 4,
                 'orderby'        => 'date',
                 'sort_order'     => 'ASC',
                 'paged'          => $paged,
@@ -77,7 +77,7 @@ get_header();?>
                         <img class="img" src="<?=get_theme_file_uri( '/images/wence.JPG' );?>"></img>
                         <h3>I AM RESCUED<i class="fa-solid fa-paw"></i><p>You didn't care how I looked </br>or that I wasn't a pedigree</br>You showed me I am not disposable</br>and that i am loved</br>You brought back the sparkle in my eye</br>and the shine of my coat</br>You restored my spirit</br>so my tail can wag again</br>You took a chance on me</br>to see what I can become</br>You gave me a place to call home</br>and a family to call MY OWN<i class="fa-solid fa-heart"></i></p></h3>
                     </div>
-                    <!-- <button class="blog-btn" onclick="openModal('faq-modal')" style="float: right;">View FAQ</button> -->
+                    <!--<button class="blog-btn" onclick="openModal('faq-modal')" style="float: right;">View FAQ</button>-->
                     <div class="count-pet">
                         <h3>Give them a forever home <i class="fa fa-home" aria-hidden="true"></i></h3> <i class="fa-solid fa-paw"></i> <?php echo $post_count; ?> FURRY <?php echo $pets_text; ?> WAITING FOR YOU
                     </div>
@@ -189,8 +189,8 @@ get_header();?>
                 </form>
             </div>
         </div>
-        <!-- FAQ Modal -->
-        <!-- <div id="faq-modal" class="modal">
+        <!--FAQ Modal
+        <div id="faq-modal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('faq-modal')">&times;</span>
                 <h2>Frequently Asked Questions</h2>

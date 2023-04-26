@@ -15,7 +15,8 @@
         <div class="page-banner-pet">
             <h1 class="page-banner__title"><?php the_title() ?> <i class="fa-solid fa-paw"></i></h1>
         </div>
-        <div class="pet-single">
+        <div class="pet-single" style="background-image: linear-gradient(rgba(40,40,40,0.76),rgba(40,40,40,0.76)) ,url(<?php echo $featured_img ? $featured_img: get_theme_file_uri( '/images/pawp.png' );?>)">
+            
             <div class="home">
                 <h3>Be my forever home <i class="fa-solid fa-heart"></i></h3>
             </div>
@@ -49,7 +50,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="bg-single" style="background-image: url(<?php echo $featured_img ? $featured_img: get_theme_file_uri( '/images/pawp.png' );?>"></div>
+            
         </div>
          <?php
     $args = array(
